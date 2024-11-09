@@ -13,6 +13,11 @@
 }
 
 body {
+  overflow: hidden;
+
+  width: 100dvw;
+  height: 100dvh;
+
   background-color: #000;
   color: silver;
 }

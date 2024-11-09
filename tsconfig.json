@@ -18,7 +18,15 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* Paths */
+    "baseUrl": "./",
+    "paths": {
+      "COMPONENTS/*": ["src/COMPONENTS/*"],
+      "PAGES/*": ["src/PAGES/*"],
+      "RESOURCES/*": ["src/RESOURCES/*"]
+    }
   },
   "include": ["src/**/*", "index.d.ts"]
 }

@@ -42,19 +42,16 @@ const SvgHandler = {
       <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path>
     </svg>
   ),
-  CornerBottomLeft: Icon(
+  GlobeSearch: Icon(
     <svg
-      viewBox="0 0 154 154"
       stroke="currentColor"
-      fill="none"
+      fill="currentColor"
+      strokeWidth="0"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M143.667 143.667L18.6667 143.667C16.4566 143.667 14.337 142.789 12.7742 141.226C11.2113 139.663 10.3334 137.543 10.3334 135.333L10.3334 10.3333"
-        strokeWidth="28"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path fill="none" d="M0 0h24v24H0z"></path>
+      <path d="M19.3 16.9c.4-.7.7-1.5.7-2.4 0-2.5-2-4.5-4.5-4.5S11 12 11 14.5s2 4.5 4.5 4.5c.9 0 1.7-.3 2.4-.7l3.2 3.2 1.4-1.4-3.2-3.2zm-3.8.1c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5zM12 20v2C6.48 22 2 17.52 2 12S6.48 2 12 2c4.84 0 8.87 3.44 9.8 8h-2.07A8 8 0 0 0 15 4.59V5c0 1.1-.9 2-2 2h-2v2c0 .55-.45 1-1 1H8v2h2v3H9l-4.79-4.79C4.08 10.79 4 11.38 4 12c0 4.41 3.59 8 8 8z"></path>
     </svg>
   ),
 };

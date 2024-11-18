@@ -11,7 +11,7 @@ const StyledOverlay = styled.div<{ opacity: number }>`
 
   pointer-events: none;
 
-  animation: shift 0.2s linear infinite both;
+  animation: shift 0.1s linear infinite both;
 
   @keyframes shift {
     0% {
@@ -24,9 +24,21 @@ const StyledOverlay = styled.div<{ opacity: number }>`
   }
 `;
 
+/**
+ * Higher-Order Component: `WithStaticOverlay`
+ *
+ * A wrapper component that applies a subtle animated static overlay effect while rendering its children.
+ * It enhances the visual appeal of the UI by adding a styled overlay with a customizable opacity.
+ *
+ * @param {number} [props.opacity=0.05] - The opacity of the overlay. A lower value makes it more transparent.
+ * @param {ReactNode} props.children - The child components to be rendered within the overlay.
+ *
+ * @returns {JSX.Element} - A React component that renders the children alongside the overlay.
+ *
+ **/
 function WithStaticOverlay({
+  opacity = 0.06,
   children,
-  opacity = 0.05,
 }: {
   children: ReactNode;
   opacity?: number;

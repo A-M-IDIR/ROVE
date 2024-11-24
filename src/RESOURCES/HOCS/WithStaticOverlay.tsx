@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 const StyledOverlay = styled.div<{ opacity: number }>`
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
 
-  inset: -250%;
+  inset: -200%;
   background-image: url(../public/IMAGES/NOISE.png);
   opacity: ${(props) => props.opacity};
 

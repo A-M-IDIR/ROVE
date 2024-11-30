@@ -5,7 +5,7 @@ export default function Welcome() {
   return (
     <WithHideInput duration={4.1} key={"WELCOME_COMMAND"}>
       <Text>
-        WELCOME T0 [ ROVE ] 0.1.0 - your go-to entertainment terminal !.
+        WELCOME T0 [ ROVE ] 0.1.0-ALPHA - your go-to entertainment terminal !.
       </Text>
 
       <div className="SpaceS" />

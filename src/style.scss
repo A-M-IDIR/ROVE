@@ -1,37 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
+@font-face {
+  font-family: DRK;
+  src: url(/FONTS/DRK.ttf);
+}
+
 * {
   box-sizing: border-box;
 
   padding: 0;
   margin: 0;
 
-  font-family: Jost;
-  font-weight: 400;
+  font-family: DRK;
 
   -webkit-tap-highlight-color: transparent;
+
+  &::selection {
+    background-color: green;
+    color: #000;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body {
   overflow: hidden;
 
   width: 100dvw;
-  height: 100dvh;
 
   background-color: #000;
-  color: silver;
-}
-
-.Padded {
-  padding: 0 1.4rem;
-
-  @media screen and (max-width: 700px) {
-    padding: 0 1rem;
-  }
-
-  @media screen and (max-width: 500px) {
-    padding: 0 0.5rem;
-  }
 }
 
 html.lenis,
@@ -53,4 +52,8 @@ html.lenis body {
 
 .lenis.lenis-smooth iframe {
   pointer-events: none;
+}
+
+.ant-message-notice-content {
+  background-color: #66ff00 !important;
 }

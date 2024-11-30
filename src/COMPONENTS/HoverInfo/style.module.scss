@@ -1,0 +1,158 @@
+.HoverInfo {
+  position: fixed;
+  overflow: hidden;
+  z-index: 1000;
+
+  width: 280px;
+
+  background-color: #171718;
+  border-radius: 0.4rem;
+  line-height: initial;
+  text-shadow: none;
+
+  pointer-events: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    box-shadow: inset -1px 1px 10px -1px rgba(255, 255, 255, 0.05);
+
+    pointer-events: none;
+    transition: 0.4s cubic-bezier(0.8, 0, 0, 1);
+  }
+
+  .Info {
+    width: 100%;
+
+    header {
+      overflow: hidden;
+
+      display: flex;
+      align-items: flex-start;
+
+      width: 100%;
+      height: 100px;
+
+      background-color: rgb(18, 18, 18);
+
+      .Banner {
+        width: 100%;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(https://www.themoviedb.org/t/p/w1280/h6YHi5ju4tinxsJ9oAd0K9h9nV0.jpg);
+      }
+
+      .Rating {
+        position: absolute;
+        top: 0.3rem;
+        right: 0.3rem;
+
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+
+        padding: 0 0.3rem;
+
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: inset -1px 1px 1px -1px #ffffff;
+        color: rgb(232, 232, 232);
+        border-radius: 0.3rem;
+
+        svg {
+          width: 0.8rem;
+
+          fill: gold;
+        }
+
+        span {
+          font-weight: 500;
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    aside {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      width: 100%;
+      height: 155px;
+      padding: 0.9rem;
+      padding-bottom: 1rem;
+
+      sub {
+        display: flex;
+        flex-direction: column;
+      }
+
+      h4,
+      p,
+      ul {
+        position: relative;
+        z-index: 3;
+      }
+
+      h4 {
+        overflow: hidden;
+        max-width: 100%;
+        margin-bottom: 0.3rem;
+
+        background-image: linear-gradient(to right, silver 50%, transparent);
+        text-shadow: 0 2px 5px #0055ff18, 0 -2px 5px #ff590015,
+          0 -2px 5px #ffffff25;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-overflow: ellipsis;
+        text-wrap: nowrap;
+
+        font-weight: 500;
+        font-size: 1rem;
+      }
+
+      p {
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+
+        color: #959595;
+
+        font-size: 0.82rem;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+
+        width: 100%;
+
+        list-style: none;
+
+        span {
+          padding: 0 0.3rem;
+
+          background-color: rgba(255, 255, 255, 0.05);
+          color: rgb(232, 232, 232);
+          border-radius: 5rem;
+          box-shadow: inset 1px 1px 1px -1px #757575;
+
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@ const StyledOverlay = styled.div<{ opacity: number }>`
   z-index: 100;
 
   inset: -200%;
-  background-image: url(../public/IMAGES/NOISE.png);
+  background: url(/IMAGES/NOISE.png);
   opacity: ${(props) => props.opacity};
 
   pointer-events: none;
@@ -37,7 +37,7 @@ const StyledOverlay = styled.div<{ opacity: number }>`
  *
  **/
 function WithStaticOverlay({
-  opacity = 0.06,
+  opacity = 0.05,
   children,
 }: {
   children: ReactNode;

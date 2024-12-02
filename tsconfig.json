@@ -35,5 +35,5 @@
       "RESOURCES/*": ["src/RESOURCES/*"]
     }
   },
-  "include": ["src/**/*", "index.d.ts"]
+  "include": ["src/**/*", "index.d.ts", "vite-env.d.ts"]
 }

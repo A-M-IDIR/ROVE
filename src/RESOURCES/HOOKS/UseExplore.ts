@@ -21,7 +21,7 @@ function UseExplore() {
   const explore = async (target: TypeTarget) => {
     setResult(null);
 
-    const baseUrl = "https://dry-term-9a81.am-idir-contact.workers.dev";
+    const baseUrl = import.meta.env.VITE_API_URL;
     const url = target.episode
       ? `${baseUrl}/explore?title=${encodeURIComponent(target.title)}&tmdbId=${
           target.tmdbId
